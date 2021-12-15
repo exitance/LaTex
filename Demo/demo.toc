@@ -1,0 +1,10 @@
+\contentsline {section}{\numberline {1}This is a section}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}This is a sub section}{3}{subsection.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1}This is a sub sub section}{3}{subsubsection.1.1.1}%
+\contentsline {paragraph}{This is a paragraph}{3}{paragraph*.2}%
+\contentsline {subparagraph}{This is a sub paragraph}{3}{subparagraph*.3}%
+\contentsline {section}{\numberline {2}数学公式示例}{3}{section.2}%
+\contentsline {section}{\numberline {3}插入图片与表格}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}图片}{4}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}表格}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}浮动体}{6}{subsection.3.3}%
