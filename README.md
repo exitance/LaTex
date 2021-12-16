@@ -117,7 +117,7 @@ Ctrl+Shift+P 输入 json 找到 `Preference: Open Settings (JSON)` 这一项，�
 **NOTE**: 在最后一行代码后加上代码需要首先在最后加上`,`
 
 ```json
-    "latex-workshop.latex.autoBuild.run": "never",
+   "latex-workshop.latex.autoBuild.run": "never",
     "latex-workshop.showContextMenu": true,
     "latex-workshop.intellisense.package.enabled": true,
     "latex-workshop.message.error.show": false,
@@ -161,48 +161,14 @@ Ctrl+Shift+P 输入 json 找到 `Preference: Open Settings (JSON)` 这一项，�
             "args": [
                 "%DOCFILE%"
             ]
-        }
-    ],
-     "latex-workshop.latex.tools": [
-        {// 编译工具和命令
-            "name": "xelatex",
-            "command": "xelatex",
-            "args": [
-                "-synctex=1",
-                "-interaction=nonstopmode",
-                "-file-line-error",
-                "%DOCFILE%"
-            ]
         },
         {
-            "name": "pdflatex",
-            "command": "pdflatex",
-            "args": [
-                "-synctex=1",
-                "-interaction=nonstopmode",
-                "-file-line-error",
-                "%DOCFILE%"
-            ]
-        },
-        {
-            "name": "latexmk",
-            "command": "latexmk",
-            "args": [
-                "-synctex=1",
-                "-interaction=nonstopmode",
-                "-file-line-error",
-                "-pdf",
-                "-outdir=%OUTDIR%",
-                "%DOCFILE%"
-            ]
-        },
-        {
-            "name": "bibtex",
-            "command": "bibtex",
-            "args": [
-                "%DOCFILE%"
-            ]
-        }
+        "name": "biber",
+        "command": "biber",
+        "args": [
+            "%DOCFILE%"
+        ]
+    }
     ],
     "latex-workshop.latex.recipes": [
         {//编译链
@@ -231,9 +197,15 @@ Ctrl+Shift+P 输入 json 找到 `Preference: Open Settings (JSON)` 这一项，�
             ]
         },
         {
-            "name": "LaTeXmk",
+            "name": "BibTeX",
             "tools": [
-                "latexmk"
+                "bibtex"
+            ]
+        },
+        {
+            "name": "Biber",
+            "tools": [
+                "biber"
             ]
         },
         {
@@ -299,7 +271,8 @@ Ctrl+Shift+P 输入 json 找到 `Preference: Open Settings (JSON)` 这一项，�
     ],
     "latex-workshop.latex.autoClean.run": "onFailed",
     "latex-workshop.latex.recipe.default": "lastUsed",
-    "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click"
+    "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
+    "C_Cpp.updateChannel": "Insiders", 
 ```
 
 ##### 4.2.1.1. 配置代码解读
@@ -384,8 +357,15 @@ Ctrl+Shift+P 输入 json 找到 `Preference: Open Settings (JSON)` 这一项，�
             "args": [
                 "%DOCFILE%"
             ]
-        }
-    ]
+        },
+        {
+        "name": "biber",
+        "command": "biber",
+        "args": [
+            "%DOCFILE%"
+        ]
+    }
+    ],
 ```
 
 *定义* 在 *recipes 编译链* 中被使用的 **编译命令**，此处为默认配置。
@@ -711,7 +691,7 @@ menu / 菜单 -> 编译器选择 `XeLaTex`
 
 #### 6.1.2. Biber
 
-    pass
+    与 Bibtex 的使用步骤相同，区别在于添加包引用时将后端改为 biber ，以及使用编译链 "xelatex -> biber -> xelatex*2"
 
 ## 7. LaTex 问题
 

@@ -22,6 +22,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}参考文献}{9}{section.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}不使用 bibtex}{9}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.1}不使用 bibtex / biber }{9}{subsection.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}使用 bibtex}{10}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.2}使用 bibtex / biber }{10}{subsection.4.2}%

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.12.13)  16 DEC 2021 10:41
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.12.13)  16 DEC 2021 10:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -570,16 +570,6 @@ Package biblatex Info: ... file 'blx-compat.def' found.
  (d:/texlive/2021/texmf-dist/tex/latex/biblatex/blx-compat.def
 File: blx-compat.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
 )
-Package biblatex Info: Trying to load BibTeX backend compatibility...
-Package biblatex Info: ... file 'blx-bibtex.def' found.
- (d:/texlive/2021/texmf-dist/tex/latex/biblatex/blx-bibtex.def
-File: blx-bibtex.def 2020/12/31 v3.16 biblatex compatibility (PK/MW)
-
-
-Package biblatex Warning: Using fall-back BibTeX(8) backend:
-(biblatex)                functionality may be reduced/unavailable.
-
-)
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (d:/texlive/2021/texmf-dist/tex/latex/biblatex/biblatex.def
@@ -781,9 +771,6 @@ Package biblatex Info: XeTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-Package biblatex Info: Input encoding 'utf8' specified.
-Package biblatex Info: Data encoding 'utf8' specified.
-(biblatex)             No need to reencode data.
 Package biblatex Info: Document encoding is UTF8 ....
 Package biblatex Info: ... and expl3
 (biblatex)             2021-02-18 L3 programming layer (loader) 
@@ -792,11 +779,26 @@ Package biblatex Info: ... and expl3
  (d:/texlive/2021/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
 Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 )
-\openout3 = `demo-blx.bib'.
+\openout3 = `demo.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'demo.bbl' found.
- (./demo.bbl)
+ (./demo.bbl
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                ref1
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                ref4
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
 Package biblatex Info: Reference section=0 on input line 45.
 Package biblatex Info: Reference segment=0 on input line 45.
  (./demo.toc
@@ -882,15 +884,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [9]
 
-LaTeX Warning: Citation 'ref1' on page 10 undefined on input line 134.
-
-
-LaTeX Warning: Citation 'ref1' on page 10 undefined on input line 134.
-
-
-LaTeX Warning: Citation 'ref4' on page 10 undefined on input line 134.
-
-
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.64723pt, for example:
 (fancyhdr)                \setlength{\headheight}{12.64723pt}.
@@ -910,27 +903,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.41063pt have occurred.
 
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `demo.out' has not changed.
-(rerunfilecheck)             Checksum: A80D6694BE7F7FFF2E4EB6C656B7B186;1242.
-
-Package biblatex Warning: Please (re)run BibTeX on the file(s):
-(biblatex)                demo
-(biblatex)                and rerun LaTeX afterwards.
-
+(rerunfilecheck)             Checksum: C2EB140907DE42792979790F7988654C;1350.
 Package logreq Info: Writing requests to 'demo.run.xml'.
 \openout1 = `demo.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22021 strings out of 476919
- 455108 string characters out of 5825423
- 1020760 words of memory out of 5000000
- 41730 multiletter control sequences out of 15000+600000
+ 21953 strings out of 476919
+ 453850 string characters out of 5825423
+ 1228458 words of memory out of 5000000
+ 41666 multiletter control sequences out of 15000+600000
  408994 words of font info for 71 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 101i,12n,104p,1838b,4778s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 101i,12n,104p,1186b,4776s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on demo.pdf (11 pages).

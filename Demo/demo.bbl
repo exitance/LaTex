@@ -3,8 +3,8 @@
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
-% This file may safely be deleted. It will be recreated as
-% required.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
 %
 \begingroup
 \makeatletter
@@ -16,67 +16,77 @@
   {}
 \endgroup
 
-\datalist[entry]{nty/global//global/global}
-  \entry{greenwade93}{article}{}
-    \name{author}{1}{}{%
-      {{hash=GGD}{%
-         family={Greenwade},
-         familyi={G\bibinitperiod},
-         given={George\bibnamedelima D.},
-         giveni={G\bibinitperiod\bibinitdelim D\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{GGD1}
-    \strng{fullhash}{GGD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{G}
-    \field{sortinithash}{G}
-    \field{number}{3}
-    \field{pages}{342\bibrangedash 351}
-    \field{title}{The {C}omprehensive {T}ex {A}rchive {N}etwork ({CTAN})}
-    \field{volume}{14}
-    \field{journaltitle}{TUGBoat}
-    \field{year}{1993}
-  \endentry
 
-  \entry{yerlanova2021high}{inproceedings}{}
-    \name{author}{3}{}{%
-      {{hash=YG}{%
-         family={Yerlanova},
-         familyi={Y\bibinitperiod},
-         given={G},
-         giveni={G},
-      }}%
-      {{hash=SM}{%
-         family={Serik},
-         familyi={S\bibinitperiod},
-         given={M},
-         giveni={M},
-      }}%
-      {{hash=KA}{%
-         family={Kopyltsov},
-         familyi={K\bibinitperiod},
-         given={A},
-         giveni={A},
-      }}%
-    }
-    \list{organization}{1}{%
-      {IOP Publishing}%
-    }
-    \strng{namehash}{YGSMKA1}
-    \strng{fullhash}{YGSMKA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{Y}
-    \field{sortinithash}{Y}
-    \field{booktitle}{Journal of Physics: Conference Series}
-    \field{number}{3}
-    \field{pages}{032032}
-    \field{title}{High performance computers: from parallel computing to
-  quantum computers and biocomputers}
-    \field{volume}{1889}
-    \field{year}{2021}
-  \endentry
-\enddatalist
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{greenwade93}{article}{}
+      \name{author}{1}{}{%
+        {{hash=49707904379b764cce43a4c7f47139f8}{%
+           family={Greenwade},
+           familyi={G\bibinitperiod},
+           given={George\bibnamedelima D.},
+           giveni={G\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{49707904379b764cce43a4c7f47139f8}
+      \strng{fullhash}{49707904379b764cce43a4c7f47139f8}
+      \strng{bibnamehash}{49707904379b764cce43a4c7f47139f8}
+      \strng{authorbibnamehash}{49707904379b764cce43a4c7f47139f8}
+      \strng{authornamehash}{49707904379b764cce43a4c7f47139f8}
+      \strng{authorfullhash}{49707904379b764cce43a4c7f47139f8}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{TUGBoat}
+      \field{number}{3}
+      \field{title}{The {C}omprehensive {T}ex {A}rchive {N}etwork ({CTAN})}
+      \field{volume}{14}
+      \field{year}{1993}
+      \field{pages}{342\bibrangedash 351}
+      \range{pages}{10}
+    \endentry
+    \entry{yerlanova2021high}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=c7f2e9b96af6b1a75ce5f37ab938b616}{%
+           family={Yerlanova},
+           familyi={Y\bibinitperiod},
+           given={G},
+           giveni={G\bibinitperiod}}}%
+        {{hash=d64310ee3f98b64453f3276360a15f4b}{%
+           family={Serik},
+           familyi={S\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e21d1ff8f5219c834d777408547c97f6}{%
+           family={Kopyltsov},
+           familyi={K\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{d91123374ab5a237ff226a1dba079793}
+      \strng{fullhash}{d91123374ab5a237ff226a1dba079793}
+      \strng{bibnamehash}{d91123374ab5a237ff226a1dba079793}
+      \strng{authorbibnamehash}{d91123374ab5a237ff226a1dba079793}
+      \strng{authornamehash}{d91123374ab5a237ff226a1dba079793}
+      \strng{authorfullhash}{d91123374ab5a237ff226a1dba079793}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Journal of Physics: Conference Series}
+      \field{number}{3}
+      \field{title}{High performance computers: from parallel computing to quantum computers and biocomputers}
+      \field{volume}{1889}
+      \field{year}{2021}
+      \field{pages}{032032}
+      \range{pages}{1}
+    \endentry
+  \enddatalist
+  \missing{ref1}
+  \missing{ref4}
+\endrefsection
 \endinput
+

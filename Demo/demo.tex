@@ -33,7 +33,7 @@
 \renewcommand{\headwidth}{\textwidth}
 \renewcommand{\footrulewidth}{0pt}
 % BibLaTex
-\usepackage[backend=bibtex]{biblatex}
+\usepackage[backend=biber]{biblatex}
 \addbibresource{ref.bib}
 % \usepackage[style=apa]{biblatex} % biber
 % \usepackage{cite} 
@@ -119,7 +119,7 @@
     \section{参考文献}
     添加参考文献的方法
 
-    \subsection{不使用 bibtex}
+    \subsection{不使用 bibtex / biber }
     %\iffalse
     % 99 代表参考文献的个数最大为 99
     \begin{thebibliography}{99}  
@@ -133,7 +133,7 @@
 
     在正文中使用\cite{ref1}，比如\cite{ref1, ref4}
     %\fi
-    \subsection{使用 bibtex}
+    \subsection{使用 bibtex / biber }
     上标且带方括号的引用标记 \cite{greenwade93}
 
     带方括号的引用标\parencite{greenwade93}

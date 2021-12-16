@@ -41,11 +41,10 @@
   >
 ]>
 <requests version="1.0">
-  <internal package="biblatex" priority="9" active="1">
+  <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>demo.aux</file>
-      <file>demo-blx.bib</file>
+      <file>demo.bcf</file>
     </provides>
     <requires type="dynamic">
       <file>demo.bbl</file>
@@ -54,7 +53,6 @@
       <file>blx-dm.def</file>
       <file>blx-unicode.def</file>
       <file>blx-compat.def</file>
-      <file>blx-bibtex.def</file>
       <file>biblatex.def</file>
       <file>standard.bbx</file>
       <file>numeric.bbx</file>
@@ -63,15 +61,14 @@
       <file>english.lbx</file>
     </requires>
   </internal>
-  <external package="biblatex" priority="5" active="1">
-    <generic>bibtex</generic>
+  <external package="biblatex" priority="5" active="0">
+    <generic>biber</generic>
     <cmdline>
-      <binary>bibtex</binary>
-      <option>-min-crossrefs 2</option>
+      <binary>biber</binary>
       <infile>demo</infile>
     </cmdline>
     <input>
-      <file>demo.aux</file>
+      <file>demo.bcf</file>
     </input>
     <output>
       <file>demo.bbl</file>
@@ -80,14 +77,10 @@
       <file>demo.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>demo.aux</file>
-      <file>demo-blx.bib</file>
+      <file>demo.bcf</file>
     </requires>
     <requires type="editable">
       <file>ref.bib</file>
-    </requires>
-    <requires type="static">
-      <file>biblatex.bst</file>
     </requires>
   </external>
 </requests>
