@@ -642,7 +642,9 @@ menu / 菜单 -> 编译器选择 `XeLaTex`
 
 ## 6. LaTex 使用
 
-### 6.1. 引用参考文献- BibTex
+### 6.1. 引用参考文献
+
+#### 6.1.1. BibTex
 
 使用 BibTex 作为 Latex 文档引用的参考文献格式管理库
 
@@ -665,21 +667,22 @@ menu / 菜单 -> 编译器选择 `XeLaTex`
         }
    ```
 
-3. 添加 cite 包；
-   在 LaTex 文档里面添加包引用
+3. 添加 biblatex 包与引用配置；
+   在 LaTex 文档里面添加 biblatex 包，并指定后端为 bibtex
 
    ```LaTex
-   \usepackage{cite}
+    \usepackage[backend=bibtex]{biblatex}
+    \addbibresource{ref.bib}
    ```
 
-4. 添加引用配置；
+
+4. 打印参考文献列表；
    在 LaTex 文档里需要显示参考文献的位置添加
 
     ```LaTex
-    \bibliographystyle{plain}
-    \bibliography{ref}
+    \printbibliography
     ```
-
+<!--
     `\bibliography{ref}` 命令指定之前生成的 BibTex 参考文献库名称
 
     `\bibliographystyle{plain}` 命令指定参考文献的呈现方式，常见的预设样式的可选项有8种：
@@ -692,6 +695,7 @@ menu / 菜单 -> 编译器选择 `XeLaTex`
     - acm，美国计算机学会期刊样式；
     - siam，美国工业和应用数学学会期刊样式；
     - apalike，美国心理学学会期刊样式；
+    - -->
 
 5. 添加引用；
    在 LaTex 文档里面添加引用格式
@@ -703,7 +707,11 @@ menu / 菜单 -> 编译器选择 `XeLaTex`
    花括号里面的内容为相关文献的引用格式的第一行内容
 
 6. 生成 PDF。
-   编译链 "xelatex -> biber -> xelatex*2" 或 "xelatex -> bibtex -> xelatex*2"
+   编译链 "xelatex -> bibtex -> xelatex*2"
+
+#### 6.1.2. Biber
+
+    pass
 
 ## 7. LaTex 问题
 

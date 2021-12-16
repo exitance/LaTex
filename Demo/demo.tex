@@ -1,6 +1,3 @@
-% 调用文档类
-% \documentclass{article}
-% 显示中文
 \documentclass[UTF8]{ctexart}
 
 % 导言区
@@ -35,8 +32,9 @@
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\headwidth}{\textwidth}
 \renewcommand{\footrulewidth}{0pt}
-% Add cite
-% \usepackage[backend=bibtex]{biblatex}
+% BibLaTex
+\usepackage[backend=bibtex]{biblatex}
+\addbibresource{ref.bib}
 % \usepackage[style=apa]{biblatex} % biber
 % \usepackage{cite} 
 % The cite package, which is meant to be used with BibTeX and a suitably chosen \bibliographystyle, 
@@ -117,5 +115,31 @@
         \caption{珠穆朗玛峰的影子}
         \label{fig::Qomolangma}
     \end{figure}
+
+    \section{参考文献}
+    添加参考文献的方法
+
+    \subsection{不使用 bibtex}
+    %\iffalse
+    % 99 代表参考文献的个数最大为 99
+    \begin{thebibliography}{99}  
+        \bibitem{ref1}Zheng L, Wang S, Tian L, et al., Query-adaptive late fusion for image search and person re-identification, Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, 2015: 1741-1750.  
+        \bibitem{ref2}Arandjelović R, Zisserman A, Three things everyone should know to improve object retrieval, Computer Vision and Pattern Recognition (CVPR), 2012 IEEE Conference on, IEEE, 2012: 2911-2918.  
+        \bibitem{ref3}Lowe D G. Distinctive image features from scale-invariant keypoints, International journal of computer vision, 2004, 60(2): 91-110.  
+        \bibitem{ref4}Philbin J, Chum O, Isard M, et al. Lost in quantization: Improving particular object retrieval in large scale image databases, Computer Vision and Pattern Recognition, 2008. CVPR 2008, IEEE Conference on, IEEE, 2008: 1-8.  
+    \end{thebibliography}
+
+    引用参考文献的方法：
+
+    在正文中使用\cite{ref1}，比如\cite{ref1, ref4}
+    %\fi
+    \subsection{使用 bibtex}
+    上标且带方括号的引用标记 \cite{greenwade93}
+
+    带方括号的引用标\parencite{greenwade93}
+
+    无格式化的引用标\supercite{yerlanova2021high}
+
+    \printbibliography
 
 \end{document}
